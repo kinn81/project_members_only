@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Project: Members Only</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      header {
+        width: 100%;
+        background-color: #333;
+        color: white;
+        padding: 1rem;
+      }
+      nav {
+        width: 200px;
+        background-color: #f1f1f1;
+        padding: 1rem;
+        min-height: calc(100vh - 60px);
+      }
+      #content-frame {
+        flex: 1;
+        padding: 1rem;
+      }
+      .nav-menu {
+        list-style-type: none;
+        padding-left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div>Project: Members Only</div>
+      </header>
+      <nav>
+        <div></div>
+        <ul class="nav-menu">
+          <li><a href="/">Homepage</a></li>
+        </ul>
+      </nav>
+      <div id="content-frame"><%- body %></div>
+    </div>
+  </body>
+</html>

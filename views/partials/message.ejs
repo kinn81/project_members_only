@@ -1,0 +1,8 @@
+<div class="message">
+  <h3><%= message.title%></h3>
+  <p><%= message.content%></p>
+  <span>Created: <%=message.created_at%></span>
+  <% if (currentUser) { %>
+    <span>Created by: <%=message.createdby%></span>
+  <% } %>
+</div>
