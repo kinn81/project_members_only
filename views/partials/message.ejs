@@ -4,5 +4,10 @@
   <span>Created: <%=message.created_at%></span>
   <% if (currentUser) { %>
     <span>Created by: <%=message.createdby%></span>
+    <% if (currentUser.is_admin) { %>
+      <form action="/message/<%= message.id %>/delete" method="POST">
+        <button type="submit">Delete</button>
+      </form>
+      <% } %>
   <% } %>
 </div>

@@ -7,11 +7,10 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Launch Program",
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
-      "program": "${workspaceFolder}/bin/www"
+      "name": "Debug Express App",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/bin/www",
+      "console": "integratedTerminal"
     }
   ]
 }
